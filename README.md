@@ -2,11 +2,11 @@ Tech Challenge 2 – Pipeline Batch Bovespa
 
 Este repositório contém a implementação completa do projeto da Fase 2 do Tech Challenge FIAP, que consiste na construção de um pipeline de dados em batch para ingestão, transformação e análise de dados do pregão da B3, utilizando serviços serverless da AWS.
 
-📌 Objetivo
+Objetivo
 
 Automatizar todo o processo de coleta, transformação e análise dos dados da carteira teórica do índice IBOV da B3, aplicando boas práticas de arquitetura de dados em nuvem com foco em escalabilidade, particionamento e performance.
 
-🧱 Arquitetura
+Arquitetura
 
 O pipeline foi desenvolvido com os seguintes componentes da AWS:
 - AWS Lambda: função acionada por eventos no S3 para iniciar o processo ETL.
@@ -15,7 +15,7 @@ O pipeline foi desenvolvido com os seguintes componentes da AWS:
 - AWS Athena: consulta e análise dos dados refinados via SQL.
 - Glue Data Catalog: metadados dos dados particionados, tornando-os acessíveis ao Athena.
 
-📁 Estrutura do Repositório
+Estrutura do Repositório
 
 tech-challenge-2/
 ├── lambda/
@@ -26,7 +26,7 @@ tech-challenge-2/
 │   └── visualizacao_b3.ipynb        # Notebook para análises com SparkSQL no Athena
 ├── README.md
 
-⚙️ Funcionalidades
+Funcionalidades
 
 - Extração: realiza scraping dos dados do pregão da B3 (carteira teórica do IBOV).
 - Ingestão: salva os dados em formato Parquet, particionado por data.
@@ -34,7 +34,7 @@ tech-challenge-2/
 - Consulta: disponibiliza os dados no Athena para análise em SQL e Spark.
 - Catalogação automática: os dados transformados são registrados no Glue Data Catalog.
 
-▶️ Como Executar
+Como Executar
 
 1. Configurar Lambda
 - Acesse o diretório lambda/ e implante a função no AWS Lambda.
@@ -68,6 +68,6 @@ Contribuição
 
 Lucas Caique, Alexandre Lima, Thiago Ramos e Eduardo Barbosa 
 
-📄 Licença
+Licença
 
 Projeto acadêmico para fins educacionais.
